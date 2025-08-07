@@ -1,0 +1,101 @@
+body{
+    background: url('../images/construction.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom, #002c5b, #000a15);
+    opacity: .9;
+}
+.container{
+    position: relative;
+    z-index: 10 !important;
+}
+h1, h2, h3, h4, h5, h6, .fa{
+    color: #fff;
+}
+.lead{
+    font-size: 1rem;
+}
+.icon{
+    border-right: 2px solid #fff;
+}
+p, small{
+    font-size: .7rem;
+    margin: 0;
+    color: white;
+}
+h1{
+    font-size: 4rem; 
+    font-weight: 700;
+}
+.progress-bar{
+    background-color: #014792;
+}
+.footer img{
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 30px; 
+        font-weight: 700;
+    }
+    .footer{
+        font-size: 10px;
+    }
+    .info{
+        text-align: center;
+    }
+    .icon{
+        border-right: none;
+    }
+}
+
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #014792;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#myDiv {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: .5s;
+  animation-name: animatebottom;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes animatebottom {
+  from { left:-100px; opacity:0 } 
+  to { left:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ left:-100px; opacity:0 } 
+  to{ left:0; opacity:1 }
+}
